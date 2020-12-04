@@ -1,0 +1,300 @@
+body{
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 15px;
+	line-height: 1.5; /* space between each line */
+
+	/* same as above */
+	font: 15px/1.5 Arial, Helvetica,sans-serif; 
+
+	padding: 0;
+	margin:0;
+	background-color: #f4f4f4;
+}
+
+
+/* Global */
+.container
+{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+.box{
+	padding: 20px;
+	border: 2px #e8491d solid;
+	border-radius: 5px;
+	overflow-y: scroll;
+	height: 100px;
+	width :50%; 
+	text-align: left;
+}
+
+.box h4{
+	color: #696969;
+}
+
+.detail{
+	text-align: left;
+	
+}
+
+.detail label, input[type=text], input[type=password],textarea, select{
+	display: block;
+    width: 50%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border: 1px solid  #e8491d;
+    border-radius: 4px;
+    margin: 20px 20px;
+}
+
+
+.detail button{
+	width: 10%;
+	height: 34px;
+	margin: 10px 20px;
+}
+
+.detail h3{
+	color: #e8491d;
+}
+
+.detail a{
+	text-align: left;
+	color: white ;
+	text-decoration: none;
+	margin-top: 20px; 
+}
+
+.passwordDesc{
+	padding: 6px 12px;
+	margin: 20px 20px;
+	text-align: left;  
+}
+
+.list td, th {
+    border: 1px solid #e84911;
+    text-align: center;
+    padding: 8px;
+}
+.list {
+    margin: 10px auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.list a{
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 16px
+}
+
+.add a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-align: left !important;
+}
+
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.button_1{
+	height: 38px;
+	background: #e8491d;
+	border:0; /* or none */
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+/* Header */
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	border-bottom: #e84911 3px solid;
+	min-height: 70px;
+}
+
+header a{
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 16px
+}
+
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding{
+	float: left;
+}
+
+header #branding h1{
+	margin: 0;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight,header .current a{
+	color:#e8491d;
+	font-weight: bold;
+
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+
+/* showcase */
+#showcase{
+	min-height: 360px;
+	max-height: 360px;
+	background: url('../image/library/showcase.jpg') no-repeat 0 -100px ;
+	color: #ffffff;
+	text-align: center;
+	overflow-y: scroll;
+}
+
+#showcase h1{
+	/*margin-top: 100px;*/
+	font-size: 50px;
+	/*margin-bottom: 10px;*/
+}
+
+/*	#showcase h1{
+		margin-top: 40px;
+	}*/
+
+#showcase p{
+	font-size: 20px;
+}
+
+
+/* news letter */
+#newsletter{
+	padding: 10px;
+	background: #35424a;
+	color: #ffffff;
+}
+
+#newsletter h1{
+	float: left;
+}
+
+#newsletter form{
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+
+/* Boxes */
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float: left;
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+}
+
+#boxes .box img{
+	width: 90px;
+	height: 80px;
+}
+
+
+/* sidebar */
+aside#sidebar{
+	margin-top: 10px;
+	float: right;
+	width: 30%;
+}
+
+aside#sidebar .quote input,aside#sidebar .quote textarea{
+	width: 90%;
+	padding: 5px;
+}
+
+
+/* Main-col */
+article#main-col{
+	float: left;
+	width: 65%;
+}
+
+footer{
+	padding: 10px;
+	font-weight: bold;
+	color:#ffffff;
+	background: #e8491d;
+	text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){ /*Do current command if size of win <=768 "standard size tablet" */
+	header #branding,
+	header nav,
+	header nav li,
+	#newsletter h1,
+	#newsletter form,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	header{
+		padding-bottom: 20px; 
+	}
+
+	#newsletter button, .quote button{
+		display: block;
+		width: 100%;
+	}
+
+	#newsletter form input[type="email"], .quote input, .quote textarea{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
